@@ -1,0 +1,45 @@
+[project]
+name = "pycygnet"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{ name = "Mahmoud Elgeiziry", email = "mahmoud.geiziry@gmail.com" }]
+dependencies = [
+    "polars>=1.6.0",
+    "pywin32>=306",
+    "arrow-odbc>=7.0.4",
+    "pyodbc>=5.1.0",
+    "pandas>=2.2.2",
+    "pymodbus>=3.7.2",
+    "ipykernel>=6.29.5",
+    "xlsxwriter>=3.2.0",
+    "fastexcel>=0.11.6",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pycygnet"]
+
+[project.scripts]
+esp = "pycygnet:get_sd_analysis"
+oa = "pycygnet:oa_tables"
+oapl = "pycygnet:oa_tables_pl"
+oa_col = "pycygnet:oa_columns"
+regcom = "pycygnet:register_com"
+unregcom = "pycygnet:unregister_com"
+arrow = "pycygnet:test_arr"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"

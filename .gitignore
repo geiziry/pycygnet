@@ -1,0 +1,14 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.log
+*.xml
+*.xlsx
+# venv
+.venv
+test*
+*.txt
