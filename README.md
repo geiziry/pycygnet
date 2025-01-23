@@ -53,9 +53,6 @@ fac_client = cygnet.fac_client
 
 ### Example 2: Running SQL Queries
 ```python
-import polars as pl
-from pycygnet import run_sql_query
-
 query = "SELECT * FROM YourTable"
 result = site.odbc_nav.run_sql_query(query)
 print(result)
