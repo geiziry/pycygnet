@@ -1,5 +1,6 @@
 # PyCygNet
-![PyCygNet Logo](assets/logo.png)
+                                                                                       ![PyCygNet Logo](assets/logo.jpg)
+
 PyCygNet is a Python project designed to simplify and enhance working with the CygNet COM API and perform data analytics on CygNet data. By passing in the CygNet site and domain, it initializes a number of CygNet clients such as `ddsclient`, `facclient`, and `pntclient`, which are pre-connected to services and ready to use as per the CygNet COM API documentation. Additionally, PyCygNet offers advanced capabilities for executing SQL queries using ODBC, returning results in Polars DataFrames, and integrating AI/ML workflows into CygNet via a complementary COM server.
 
 ---
